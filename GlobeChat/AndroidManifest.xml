@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="srhodes1.villanova.ece.globechat" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".ParseApplication">
+        <activity android:name=".LoginActivity" />
+
+        <activity
+            android:name=".DispatchActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactList" />
+        <activity android:name=".signupScreen"/>
+        <activity android:name=".NewFriend"/>
+        <service android:name=".InterceptSms">
+            <receiver android:name=".InterceptSms$MyReceiver">
+                <intent-filter>
+                    <action android:name = "Telephony.Sms.Intents.SMS_RECEIVED_ACTION"/>
+                </intent-filter>
+            </receiver>
+        </service>
+        <activity android:name=".DialogBox" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

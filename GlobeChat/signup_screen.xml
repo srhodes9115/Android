@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#14cb0e">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/globe"
+        android:background="@raw/giphy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_marginTop="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/globeChat"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/globeChat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usernameText"
+        android:layout_below="@id/globeChat"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/newUser"/>
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUserEdit"
+        android:layout_below="@id/globeChat"
+        android:background="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newUser"
+        android:id="@+id/phoneNumber"
+        android:layout_marginLeft="10dp"
+        android:text="Phone Number:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addPhoneNumber"
+        android:layout_below="@id/addUserEdit"
+        android:background="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/passwordText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/passwordFirst"/>
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPhoneNumber"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp"
+        android:background="#FFFFFF"
+        android:id="@+id/passwordFirstEdit"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordSecond"
+        android:text="Confirm Password:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/passwordFirst"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/passwordFirstEdit"
+        android:id="@+id/passwordCheckEdit"
+        android:inputType="textPassword"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordCheckEdit"
+        android:layout_centerHorizontal="true"
+        android:text="Finish"
+        android:id="@+id/finish"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
