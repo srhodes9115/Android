@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:src="@drawable/espn"
+        android:paddingLeft="30dp"
+        android:id="@+id/espnText"
+        android:background="#000000"
+        />
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/espnText"
+        android:id="@+id/video"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:text="Villanova vs. Towson"
+        android:textSize="30sp"/>
+
+</RelativeLayout>

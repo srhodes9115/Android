@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:stretchColumns="1"
+    android:background="#000000">
+<TableRow>
+    <ImageView android:layout_height="50dp"
+        android:layout_width="125dp"
+        android:src="@drawable/espn"
+        android:paddingLeft="50dp"
+        android:background="#000000"
+       />
+</TableRow>
+
+<TableRow android:paddingTop="30sp"
+    android:paddingBottom="30dp">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Villanova vs. Towson"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:paddingLeft="15dp"
+        android:background="#000000"
+        android:layout_gravity="center"
+        />
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@android:drawable/ic_media_play"
+        android:id="@+id/villanovaGame"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+</TableRow>
+
+
+  <TableRow android:paddingTop="30sp"
+      android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Harvard vs. Cornell"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:paddingLeft="15dp"
+            android:background="#000000"
+            android:layout_gravity="center"
+            />
+
+      <ImageButton
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:background="@android:drawable/ic_media_play"
+          android:textAlignment="center"
+          android:id="@+id/cvButton"
+          android:layout_gravity="center" />
+    </TableRow>
+
+    <TableRow android:paddingTop="30sp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Richmond vs. UPENN"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:paddingLeft="15dp"
+            android:background="#000000"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@android:drawable/ic_media_play"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+    </TableRow>
+
+    <TableRow android:paddingTop="30sp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Texas vs. Rice"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:background="#000000"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@android:drawable/ic_media_play"
+            android:paddingTop="25sp"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+    </TableRow>
+
+    <TableRow android:paddingTop="30sp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Colorado vs. Berkley"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:background="#000000"
+            android:paddingLeft="15dp"/>
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@android:drawable/ic_media_play"
+            android:textAlignment="center"
+            android:layout_gravity="center" />
+    </TableRow>
+
+
+</TableLayout>
